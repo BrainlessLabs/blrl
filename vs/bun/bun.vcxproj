@@ -198,7 +198,7 @@
       <Optimization>Disabled</Optimization>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;BOOST_ALL_NO_LIB;FMT_HEADER_ONLY;BUN_SQLITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;BOOST_SYSTEM_NO_LIB;BOOST_SYSTEM_NO_DEPRECATED;BOOST_ERROR_CODE_HEADER_ONLY;FMT_HEADER_ONLY;BUN_SQLITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\include\third_party;$(SolutionDir)..\include\third_party\unqlite;$(SolutionDir)..\include\third_party\sqlite;$(BOOST_DIR);$(SOCI_DIR)\include;$(POSTGRES)\include;$(SolutionDir)..\include\third_party\msgpack</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <EnablePREfast>true</EnablePREfast>
@@ -227,7 +227,7 @@
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;BOOST_ALL_NO_LIB;FMT_HEADER_ONLY;BUN_SQLITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;BOOST_ALL_NO_LIB;BOOST_SYSTEM_NO_LIB;BOOST_SYSTEM_NO_DEPRECATED;BOOST_ERROR_CODE_HEADER_ONLY;FMT_HEADER_ONLY;BUN_SQLITE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(SolutionDir)..\include\third_party;$(SolutionDir)..\include\third_party\unqlite;$(SolutionDir)..\include\third_party\sqlite;$(BOOST_DIR);$(SOCI_DIR)\include;$(POSTGRES)\include;$(SolutionDir)..\include\third_party\msgpack</AdditionalIncludeDirectories>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <EnablePREfast>true</EnablePREfast>
@@ -373,6 +373,13 @@
     <ClInclude Include="..\..\include\third_party\sqlite\sqlite3.h" />
     <ClInclude Include="..\..\include\third_party\sqlite\sqlite3ext.h" />
     <ClInclude Include="..\..\include\third_party\unqlite\unqlite.h" />
+    <ClInclude Include="..\..\include\third_party\web\client_http.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\client_https.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\crypto.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\server_http.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\server_https.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\status_code.hpp" />
+    <ClInclude Include="..\..\include\third_party\web\utility.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\.gitignore" />
