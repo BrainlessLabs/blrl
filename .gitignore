@@ -31,7 +31,8 @@
 .DS_Store
 *.suo
 *.db
-*/.vs/*
+**/.vs/**
 **/x64/*
 Release
 **/bin/*
+**/qt.pro.user
